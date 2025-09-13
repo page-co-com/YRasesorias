@@ -34,7 +34,6 @@
     ]
   }
   </script>
-</head>
   <style>
     * {
       box-sizing: border-box;
@@ -563,8 +562,10 @@
       transform: scale(1.05);
     }
 
+    /* ESTILOS DEL FORMULARIO */
     .formulario-container {
-      background: white;
+      background: #f7eafc; /* Fondo morado claro */
+      border: 2px solid #d4aee8; /* Borde morado */
       border-radius: 20px;
       max-width: 450px;
       margin: auto;
@@ -581,24 +582,29 @@
     .formulario-container p.descripcion {
       font-size: 16px;
       margin-bottom: 20px;
+      color: #7a5c43;
     }
     .formulario-container input, .formulario-container textarea {
       width: 100%;
-      border: 1px solid #ccc;
+      border: 1px solid #d4aee8; /* Borde de campo morado */
       border-radius: 8px;
       padding: 14px;
       margin-bottom: 15px;
       font-size: 16px;
-      color: black;
+      color: #5d3a77; /* Color de texto morado */
+      background: #fff; /* Fondo de campo blanco */
       font-family: Arial, sans-serif;
     }
+    .formulario-container input::placeholder, .formulario-container textarea::placeholder {
+      color: #a081b2; /* Placeholder morado */
+    }
     .formulario-container input:focus, .formulario-container textarea:focus {
-      border-color: #8c50a5;
+      border-color: #8c50a5; /* Borde de campo activo morado oscuro */
       outline: none;
     }
     .formulario-container button {
       width: 100%;
-      background: #8c50a5;
+      background: #8c50a5; /* Botón morado */
       color: white;
       padding: 14px;
       border: none;
@@ -609,10 +615,10 @@
       transition: background 0.3s ease;
     }
     .formulario-container button:hover {
-      background: #723c8a;
+      background: #723c8a; /* Botón hover morado oscuro */
     }
     .formulario-container #errorMsg {
-      color: red;
+      color: #a01010;
       font-size: 15px;
       margin-bottom: 12px;
     }
