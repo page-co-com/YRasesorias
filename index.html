@@ -57,6 +57,26 @@
         border-radius: 15px;
     }
 
+    /* Nuevo estilo para el logo fijo */
+    .fixed-logo {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 999; /* Por debajo del menú (z-index: 1000) */
+    }
+
+    .fixed-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+
     .menu-toggle {
       position: relative;
       margin: 10px auto;
@@ -353,6 +373,21 @@
       display: block;
       margin: 0 auto;
       border-radius: 15px;
+    }
+    
+    /* Nuevo estilo para la imagen principal de la sección de inicio */
+    .inicio-main-image-container {
+      width: 100vw;
+      overflow: hidden;
+      margin-top: 30px;
+      aspect-ratio: 16 / 9; /* Establece la forma rectangular */
+    }
+
+    .inicio-main-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Recorta y "hace zoom" en la imagen */
+      display: block;
     }
 
     .cuadro-texto {
@@ -1143,6 +1178,10 @@
 </head>
 <body>
 
+<div class="fixed-logo">
+  <img src="https://i.ibb.co/4ZM8nnjG/IMG-20250911-WA0007.jpg" alt="Logo Yenny Romero Fiallo">
+</div>
+
 <div class="menu-toggle" id="toggleBtn">
   <svg id="arrowIcon" viewBox="0 0 24 24" fill="none" stroke="#5d3a77" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
     <polyline points="6 9 12 15 18 9" />
@@ -1168,8 +1207,8 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
       Solicita tu Consulta
     </a>
-    <div style="width: 100vw; overflow: hidden; margin-top: 30px;">
-      <img src="https://i.ibb.co/ksss9vmF/365-sin-t-tulo-20250812174615.png" alt="Imagen principal" style="width: 100%; height: auto; display: block;" class="animate-on-scroll scale-in">
+    <div class="inicio-main-image-container">
+      <img src="https://i.ibb.co/v6r94XSq/IMG-20250803-WA0010.jpg" alt="Imagen principal" class="inicio-main-image animate-on-scroll scale-in">
     </div>
 
     <div class="fan-container animate-on-scroll fade-in" data-delay="300">
@@ -1402,18 +1441,15 @@
     </div>
 
     <div class="story">
-        <h2 class="animate-on-scroll slide-up" data-delay="400">Soy Yenny Romero Fiallo</h2>
+<h2 class="animate-on-scroll slide-up" data-delay="400">Mi historia</h2>
 
-      <p class="animate-on-scroll fade-in" data-delay="500"><strong>Durante muchos años observé</strong> cómo personas capaces, preparadas y con un gran talento se quedaban a mitad de camino en sus sueños empresariales y personales.</p>
+<p class="animate-on-scroll fade-in" data-delay="500">Desde que era joven, descubrí que mi camino estaría en el mundo de la Asesoría. No fue una decisión sencilla; muchos pensaban que solo las grandes empresas podían destacarse en este campo, pero mi pasión y curiosidad me impulsaron a seguir adelante, convencida de que siempre hay espacio para nuevas ideas y enfoques.</p>
 
-<p class="animate-on-scroll fade-in" data-delay="600">Personas inteligentes, disciplinadas y con un potencial inmenso, pero que, por miedo o falta de confianza, no se atrevían a dar el siguiente paso: <strong>no reconocían lo que realmente valían, dudaban de su capacidad para liderar proyectos de gran escala y creían que el éxito estaba reservado solo para unos pocos.</strong></p>
+<p class="animate-on-scroll fade-in" data-delay="600">Comencé mi carrera estudiando sin descanso, muchas veces quedándome hasta la madrugada para comprender cada concepto. Sabía que la teoría era importante, pero la práctica era la clave para crecer. Así, participé en proyectos pequeños, a veces incluso de manera voluntaria, con el único objetivo de aprender y demostrar de lo que era capaz. Cada reto fue una lección, y cada logro me motivó a seguir avanzando.</p>
 
-<p class="animate-on-scroll fade-in" data-delay="700">Yo también viví esa etapa. Aunque tenía conocimientos, logros y preparación, sentía que siempre debía demostrar más, como si nunca fuera suficiente para alcanzar mis metas más ambiciosas.</p>
+<p class="animate-on-scroll fade-in" data-delay="700">Con el tiempo entendí que el éxito en la Asesoría no depende solo del conocimiento técnico, sino también de la disciplina, la empatía y la resiliencia. Aprendí a escuchar, a guiar equipos y a proponer soluciones estratégicas que realmente marcaran la diferencia. Mi propósito siempre fue claro: brindar un acompañamiento cercano y profesional que ayudara a otros a alcanzar sus metas.</p>
 
-<p class="animate-on-scroll fade-in" data-delay="800"><strong>Hasta que decidí romper con esas creencias.</strong> Entendí que no quería ser solo una profesional más, sino una persona que construye, transforma e inspira. <strong>Me propuse desarrollar un proyecto sólido, crear una marca auténtica y liderar una comunidad que creyera en sí misma.</strong></p>
-
-<p class="animate-on-scroll fade-in" data-delay="900">Hoy, mi misión es acompañar a otras personas —mujeres y hombres— para que también puedan superar barreras, potenciar su liderazgo y alcanzar el lugar que merecen en el mundo empresarial y personal. <strong>Porque si yo pude cambiar mi historia, cualquiera también puede hacerlo.</strong></p>
-    </div>
+<p class="animate-on-scroll fade-in" data-delay="800">Hoy, mi misión es compartir mi experiencia y conocimientos para que más personas puedan acceder a una asesoría que les permita crecer, superar barreras y desarrollar todo su potencial. Porque si yo logré transformar mi sueño en una profesión, estoy convencida de que cualquiera, con la orientación adecuada y la dedicación necesaria, también puede lograrlo.</p>
 
     <div class="pattern-gallery animate-on-scroll slide-up" data-delay="1000">
         <img src="https://i.ibb.co/HT7Cqgp3/365-sin-t-tulo-20250805202647.png" alt="Patrón decorativo 1">
